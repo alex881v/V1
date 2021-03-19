@@ -24,33 +24,78 @@
 
     p{text-align: center;}
 
-    img{display: block;
+    img
 
-        margin-left: auto;
-
-        margin-right: auto;}
-
-    .column{
-
-        float:left;
-
-        width: 20%;
-          
-        padding: 15px;}    
-
-    .row::after{
-
-        content: "";
-         
-        clear: both;
+   {
         
-        display: table;}
+     display: block;
+
+     margin-left: auto;
+
+     margin-right: auto;
+        
+    }  
+
+   *{
+       box-sizing: border-box; 
+    }
+
+    .img-container
+    {
+
+        float: left;
+
+        width: 30%;
+
+        padding: 15px;
+
+    }
+    
+    .clearfix::after
+    
+    {
+
+      content: "";
+ 
+      clear: both;
+
+      display: table;
+
+    }
+
+    .flex-container
+    
+    {
+     
+     display: flex;
+
+     height: 400px;
+
+     align-items: center;
+
+    }
+
+    .flex-container > div
+    
+    {
+      
+     width: 200px;
+
+    margin: 60px;
+
+    text-align: center;
+
+    line-height: 100px;
+
+    font-size: 50px;
+
+    }
 
 </style>
 
-<body>
-
 </head>
+
+<body>
 
 <h1> Grønne drømme </h1>
 
@@ -76,34 +121,34 @@
 
 <h2> Nyeste planter i databasen</h2>
 
-<div class="row">
+<div class="clearfix">
+
+<div class="flex-container"
 
 <p> <h4> <a href="Plants/Bonne.html">-Bønne,Blue Lake</a> </h4> </p>
 
-<div class="column">
+<div class="img-container">
 
 <img src="IMG/bønner200px.jpg" alt="Bønner" style="width: 100%;">
 
 </div>
 
-
 <p> <h4> <a href="Plants/aert.html">-Ært,Alderman,</a> </h4> </p>
 
-<div class="column">
+<div class="img-container">
 
 <img src="IMG/PeaAlderman200px.jpg" alt="Ærter" style="width: 100%;">
 
+</div>
 
 <h4> <a href="Plants/basilikum.html">-Basilikum,Ocimum Basilicum</a> </h4>
 
-<div class="column">
+<div class="img-container">
 
-<img src="IMG/BasilikumOcimumBasilicum200px.jpg" alt="Basilikum" style="width: 100%;">
+<img src="IMG/BasilikumOcimumBasilicum200px.jpg" alt="Basilikum" style="width: 100%;" >
 
 </div>
-
-
-
+</div>
 
 </body>
 </html>
