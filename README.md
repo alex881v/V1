@@ -1,6 +1,6 @@
 Dette er mit første Website i V1
 
-![Skærmbillede (7)](https://user-images.githubusercontent.com/80887403/111612647-f56cc300-87dd-11eb-9d6d-ae5f26a3083a.png)
+![Skærmbillede (9)](https://user-images.githubusercontent.com/80887403/111767147-ae96d000-88a6-11eb-9b92-2f815469be33.png)
 
 ![Skærmbillede (13)](https://user-images.githubusercontent.com/80887403/111763654-af2d6780-88a2-11eb-8897-a113f2767df5.png)
 
