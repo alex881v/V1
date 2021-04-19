@@ -1,42 +1,141 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link href="../CSS/style.css" type="text/css" rel="stylesheet">
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Basilikum</title>
+
+    <meta name="Beskrivelse" content="Her kan du finde hvordan basilikum skal plantes og basilikums information">
+
 </head>
+
+<style>
+
+</style>
+
 <body>
 
- <p> <h1>Sød, storbladet basilikum</h1> </p>
-  
- <p> <h2>Ocimum Basilicum</h2> </p>
+    <nav id="navbar-img"></nav>
 
- <img src="../IMG/BasilikumOcimumBasilicum400px.jpg" alt="Basilicum">
+    <nav id="navbar">
 
- <p> Type: Basilikum</p>
 
- <p> Højde: 45 cm</p>
+    <ul>
+        
+        <li><a class="active" href="../Grønnedrømme/Index.html">Home</a></li>
 
- <p> Såafstand: 20 cm</p>
+        <li><a class="active" href="#">Grøntsager</a>
 
- <p> Rækkeafstand: 30 cm</p>
+            <ul>
 
- <p> Sådybde: 1 cm</p>
+            <li><a  href="../Grønnedrømme/Plants/aert.html">Ærter</a></li>
 
- <p> Lysforhold: Sol</p>
+            <li><a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a></li>
 
- <p> Forspiring: Marts April Maj Juni</p>
+            <li><a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a> </li>
 
- <p> Udplantning/såning på friland: Maj Juni Juli</p>
+        </ul>
 
- <p> Spiring efter: ca. 20 dage</p>
+        </li>
 
- <p> Moden til høst efter: ca. 60 dage</p>
+        <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html">Kontakt os</a></li>
 
- <p> Beskrivelse:</p>
+        </ul>
 
- <p> Der er over 60 basilikumsorter, og storbladet, sød basilikum - også kendt som klassisk, italiensk basilikum, er den mest almindelig solgte basilikum med ovale grønne blade og hvide blomster. Den har en kraftig aromatisk, let pebret smag med et strejf af mynte og nellike. Du kan bruge bladene både friske og tørrede, og smagen er helt perfekt sammen med tomater eller i en lækker hjemmelavet pesto. Basilikum kan med fordel plantes i drivhuset, da den tiltrækker bier og afskrækker fluer.</p>
+    </nav>
+    
+<main>
+
+    <p>
+        <h1>Sød, storbladet basilikum</h1>
+    </p>
+
+    <p>
+        <h2>Ocimum Basilicum</h2>
+    </p>
+
+    <img src="../IMG/BasilikumOcimumBasilicum400px.jpg" alt="Grønsager,planter,sundt, frihed,plante information,Basilicum informationer">
+
+    <p> Type: Basilikum</p>
+
+    <p> Højde: 45 cm</p>
+
+    <p> Såafstand: 20 cm</p>
+
+    <p> Rækkeafstand: 30 cm</p>
+
+    <p> Sådybde: 1 cm</p>
+
+    <p> Lysforhold: Sol</p>
+
+    <p> Forspiring: Marts April Maj Juni</p>
+
+    <p> Udplantning/såning på friland: Maj Juni Juli</p>
+
+    <p> Spiring efter: ca. 20 dage</p>
+
+    <p> Moden til høst efter: ca. 60 dage</p>
+
+    <p> Beskrivelse:</p>
+
+    <p> Der er over 60 basilikumsorter, og storbladet, sød basilikum - også kendt som klassisk, italiensk basilikum, er den mest almindelig solgte basilikum med ovale grønne blade og hvide blomster. Den har en kraftig aromatisk, let pebret smag med et strejf
+        af mynte og nellike. Du kan bruge bladene både friske og tørrede, og smagen er helt perfekt sammen med tomater eller i en lækker hjemmelavet pesto. Basilikum kan med fordel plantes i drivhuset, da den tiltrækker bier og afskrækker fluer.</p>
+
+</main>
+
+   <button id="mybutton"><a href="#top" style="color: white;">top</a></button>
+
+    <footer>
+
+        <p>
+
+            © Grønne Drømme 2021
+
+        </p>
+
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            myfunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myfunction()
+
+        {
+
+            if (window.pageYOffset >= sticky)
+
+            {
+
+                navbar.classList.add("sticky");
+
+            }
+
+        }
+    </script>
 
 </body>
+
 </html>

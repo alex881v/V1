@@ -1,45 +1,146 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link href="../CSS/style.css" type="text/css" rel="stylesheet">
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ærter</title>
+    
+    <meta name="Beskrivelse" content="Her kan du finde hvordan ærterne skal plantes og ærtens information "
+
 </head>
+
+<style>
+
+</style>
+
 <body>
- 
- <P> <H1>Ært</H1> </P>
 
- <h2> Pisum Sativum 'Alderman'</h2>
-     
- <img src="../IMG/PeaAlderman400px.jpg" alt="Ærter" width="600" height="700">
+    <nav id="navbar-img"></nav>
 
- <p> Type: Marvært</p>
+    <nav id="navbar">
 
- <p> Højde: 180 cm</p>
 
- <p> Såafstand: 6 cm</p> 
+    <ul>
+        
+        <li><a class="active" href="../Grønnedrømme/Index.html">Home</a></li>
 
- <p> Rækkeafstand: 80 cm</p>  
+        <li><a class="active" href="#">Grøntsager</a>
 
- <p> Sådybde: 3 cm</p>
+            <ul>
 
- <p> Lysforhold: Fuld sol</p> 
+            <li><a  href="../Grønnedrømme/Plants/aert.html">Ærter</a></li>
 
- <p> Forspiring: Marts April</p>
+            <li><a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a></li>
 
- <p> Udplantning/såning på friland: Maj Juni</p> 
+            <li><a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a> </li>
 
- <p> Spiring efter: ca. 7 dage</p> 
+        </ul>
 
- <p> Moden til høst efter: ca. 91 dage</p> 
+        </li>
 
- <p> Beskrivelse:</p>
+        <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html">Kontakt os</a></li>
 
- <p> Herlig, god marvært der giver 7-10 ærter/bælg. En høj sort som kræver støtte, giver rigeligt udbytte på et lille areal. Giver udbytte i en lang periode. Velegnet til frysning. Noget sødere i smagen end normal marvært, men kan ikke sås lige så tidligt om foråret. Trives i porøs jord, men er ganske nøjsom. Vandes ved tørke. Dyrk ærter forskellige steder i køkkenhaven hvert år. De gøder jorden.</p>
+        </ul>
 
- <p> Frilandssåning: Når jorden er mindst 10°C varm, ellers rådner frøene. Vand sårillen før såning. Hold såningen fugtig, til frøene er spiret.</p>
+    </nav>
+
+<main>
+
     
     
+    <P>
+        <H1>Ært</H1>
+    </P>
+
+    <h2> Pisum Sativum 'Alderman'</h2>
+
+    <img src="../IMG/PeaAlderman400px.jpg" alt="Grønsager,planter,sundt, frihed,plante information,Ærter informationer" width="600" height="700">
+
+    <p> Type: Marvært</p>
+
+    <p> Højde: 180 cm</p>
+
+    <p> Såafstand: 6 cm</p>
+
+    <p> Rækkeafstand: 80 cm</p>
+
+    <p> Sådybde: 3 cm</p>
+
+    <p> Lysforhold: Fuld sol</p>
+
+    <p> Forspiring: Marts April</p>
+
+    <p> Udplantning/såning på friland: Maj Juni</p>
+
+    <p> Spiring efter: ca. 7 dage</p>
+
+    <p> Moden til høst efter: ca. 91 dage</p>
+
+    <p> Beskrivelse:</p>
+
+    <p> Herlig, god marvært der giver 7-10 ærter/bælg. En høj sort som kræver støtte, giver rigeligt udbytte på et lille areal. Giver udbytte i en lang periode. Velegnet til frysning. Noget sødere i smagen end normal marvært, men kan ikke sås lige så tidligt
+        om foråret. Trives i porøs jord, men er ganske nøjsom. Vandes ved tørke. Dyrk ærter forskellige steder i køkkenhaven hvert år. De gøder jorden.</p>
+
+    <p> Frilandssåning: Når jorden er mindst 10°C varm, ellers rådner frøene. Vand sårillen før såning. Hold såningen fugtig, til frøene er spiret.</p>
+
+</main> 
+
+     <button id="mybutton"><a href="#top" style="color: white;">top</a></button>
+
+    <footer>
+
+        <p>
+
+            © Grønne Drømme 2021
+
+        </p>
+
+    </footer>
+
+
+    <script>
+        window.onscroll = function() {
+            myfunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myfunction()
+
+        {
+
+            if (window.pageYOffset >= sticky)
+
+            {
+
+                navbar.classList.add("sticky");
+
+            }
+
+        }
+    </script>
+
+
+
 </body>
+
 </html>

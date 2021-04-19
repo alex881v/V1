@@ -1,0 +1,533 @@
+/* Her har jeg hvad for noget text typer der bruges til hjemmesiden(som standart) */
+
+body {
+    background-color: #91929c;
+    color: #000000;
+    margin: auto;
+    font-size: 28px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+/* Her har jeg min baggrund på hele siden og hvor selve texten skal stå */
+
+.header {
+    background-color: #93b1f0;
+    text-align: center;
+    position: fixed;
+   
+}
+
+
+/* Alt under her har jeg min menu-linje hvor stort eller småt min text skal være. */
+
+
+/* og hvis der skulle være nogle effekter står det også her under */
+
+a.active:link {
+
+    text-decoration: none;
+}
+
+#navbar, footer {
+
+    overflow: auto;
+    background-color: green;
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+
+}
+
+#navbar a.active:hover {
+
+    background-color: black;
+    
+}
+
+#navbar a.active {
+
+    color: #93b1f0;
+    font-variant: small-caps;
+    float: left;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 40px;
+    width: 33%;
+    justify-content: center;
+}
+
+#navbar-img {
+
+    background-image: url(../IMG/Forside-hoejbed5.jpg);
+    height: 60px;
+    width: auto;
+    margin: auto;
+    z-index: 5;
+
+}
+
+#navbar .active
+
+{
+
+    display: flex;
+
+}
+
+nav ul
+
+{
+
+    list-style-type: none;
+
+    margin: 0 73px;
+
+}
+
+nav ul ul
+
+{
+
+    flex-direction: column;
+
+    position: absolute;
+
+    z-index: 1;
+
+    width: 29.38vw;
+
+    visibility: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    top: 105px;
+
+    padding: 0px;
+
+    margin-left: 29.39vw;
+
+}
+
+nav ul li:hover ul
+
+{
+
+    visibility: visible;
+
+    background-color: black !important;
+
+
+
+}
+
+nav ul ul li:hover
+
+{
+
+    background: rgba(255,255,255,0.3) !important;
+
+    width: 100%;
+
+}
+
+nav ul ul li
+
+{
+
+    flex-direction: column;
+
+}
+
+@media screen and (max-width:500px){
+#navbar a 
+
+{
+
+    float: none;
+
+    display: block;
+
+}
+
+    
+}
+
+
+/* Min sticky er hvordan min menu-linje opføresig eller reager på hvis man scroller op og ned som er opsat som en class */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.sticky+.content {
+    margin-top: 100px;
+}
+
+
+/* Min h1-3 her under er med noget forsklligt text,farver, nogle skygger på den verdicale og hoizointe led samt centuret*/
+
+h1,
+h2,
+h3 {
+    color: #4cd455;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    text-shadow: -2px -2px 2px black;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 4rem;
+    text-shadow: -2px -2px 2px black;
+}
+
+h3 {
+    font-size: 1, 5rem;
+    line-height: 4rem;
+    text-shadow: -2px -2px 2px black;
+}
+
+
+/* Min p er mit main text på hjemmesiden som der er har e skrifttype, farve og centuret*/
+
+p {
+    line-height: 2rem;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+}
+
+
+/* Her under har jeg mine billeder med hvordan de skal skæres til eller få det til at blive placeret så der ikke kommer en side-scrollbar */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px 0px;
+    max-width: 80%;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* Her har jeg nogle a mine classes som bruges til billederene */
+
+.img-container {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flex-container {
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+.flex-container>div {
+    width: 200px;
+    margin: 60px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.img-container:hover {
+    opacity: 0.5;
+}
+
+
+/* Her har jeg min scrollbar */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #008000;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #008000;
+    cursor: pointer;
+}
+
+.clearfix
+
+{
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+
+.clearfix h3
+
+{
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+
+main
+
+{
+
+    margin-top: 50px;
+
+}
+
+footer
+
+{
+
+    display: flex;
+
+    justify-content: center;
+
+    height: auto;
+
+
+}
+
+label p
+
+{
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 25rem
+
+}
+
+input p
+
+{
+
+   margin: 20px;
+
+   width: 20rem;
+
+   height: 50px;
+
+   padding: 12px 20px;
+
+   box-sizing: border-box;
+
+   border: 2px solid #ccc;
+
+   border-radius: 4px;
+
+   background-color: #f8f8f8;
+
+   font-size: 16px;
+
+   resize: none;
+
+}
+
+textarea 
+
+{
+
+    width: 20rem;
+
+    height: 150px;
+
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+
+    border: 2px solid #ccc;
+
+    border-radius: 4px;
+
+    background-color: #f8f8f8;
+
+    font-size: 16px;
+
+    resize: none;
+
+}
+
+
+
+input[type=number]
+
+{
+
+    width: 5rem;
+
+}
+
+input[type=besked]
+
+{
+
+    width: 7rem;
+
+}
+
+select
+
+{
+
+    width: 7rem;
+
+}
+
+p
+
+{
+
+    margin: 20px;
+
+    overflow: hidden;
+
+}
+
+input[type=checkbox]
+
+{
+
+    display: block;
+
+    justify-content: center;
+
+    margin: 0 auto;
+
+}
+
+input[type=checkbox]:checked ~ .remove-check
+
+{
+
+    display: block;
+
+}
+
+.remove-check
+
+{
+
+    display: none;
+
+}
+
+
+#mybutton
+
+{
+
+    position: fixed;
+
+    bottom: 10px;
+
+    right: 8%;
+
+    left: 92%;
+
+    max-width: 30px;
+
+    width: 100%;
+
+    font-size: 12px;
+
+    background-color: gray;
+
+    padding: 5px;
+
+    border-radius: 4px;
+
+
+}
+
+#mybutton:hover
+
+
+{
+
+    background-color: #008000;
+
+}
+
+#mybutton a
+
+{
+
+        color: white;
+
+}
+
+.dark-mode
+
+{
+
+    display: flex;
+
+    background-color: black;
+
+    color: lightgrey;
+    
+}
+
+.dark-mode:hover
+
+{
+
+    background-color: black;
+
+    color: white;
+
+}
+
+/* TEST */
+
+
+audio
+
+{
+
+    display: flex;
+
+    
+}
+
+
+
+

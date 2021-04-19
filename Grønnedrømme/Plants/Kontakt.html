@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link href="../CSS/style.css" type="text/css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontakt os</title>
+
+    <meta name="Beskrivelse" content="Her kan du sende os en muglig ny plante til vores hjemmeside eller komme i kontakt med os via mail">
+
+</head>
+
+<style>
+
+</style>
+
+<input>
+
+<nav id="navbar-img"></nav>
+
+<nav id="navbar">
+
+
+<ul>
+    
+    <li><a class="active" href="../Grønnedrømme/Index.html">Home</a></li>
+
+    <li><a class="active" href="#">Grøntsager</a>
+
+        <ul>
+
+        <li><a  href="../Grønnedrømme/Plants/aert.html">Ærter</a></li>
+
+        <li><a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a></li>
+
+        <li><a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a> </li>
+
+    </ul>
+
+    </li>
+
+    <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html">Kontakt os</a></li>
+
+    </ul>
+
+</nav>
+
+ <form class="kontakt" method="get"></form>
+
+     <h1> Kontakt os </h1>
+
+     <p><label>Navn: </label></p>
+
+    <p><input name="besked" ></input> </p> 
+
+     <p><label>E-mail: </label></p>
+
+   <p><input type="E-mail" name="besked" ></input> </p>  
+
+     <p><label>Besked: </label></p>
+
+     <p><textarea name="besked" placeholder="Skriv din besked her"></textarea></p> 
+
+     <p><label>Ny plante til databasen:  </label> </p>
+
+   <input type="checkbox" name="besked" ></input>
+
+   <div class="remove-check">
+      
+          <p><label  >Plantens danske navn:  </label></p>
+
+        <p> <input name="besked"></input></p>
+
+        <p><label >Plantens variant:  </label></p>
+
+        <p><input name="besked"></input></p>
+
+        <p> <label>Plantens botaniske navn:</label></p>
+
+        <p><input name="besked" ></input></p> 
+
+        <p><label>Plantens type: </label></p>
+
+        <p><input name="besked" ></input> </p>
+
+        <p><label>Plantens Højde: </label></p>
+
+      <p><input type="number" name="number" min="0">cm</input> </p>
+
+        <p><label>Plantens Rækkeafstand:</label></p>
+
+      <p><input type="number" name="besked" min="0">cm</input></p> 
+
+        <p><label>Plantens sådybde:</label></p>
+
+      <p><input type="number" name="besked" min="0">cm</input></p>
+
+        <p><label>Plantens Lysforhold:</label></p>
+      
+        <p><select name="lysforhold">
+
+            <option value="Fuld sol">Fuld sol</option>
+
+            <option value="halv sol">Halv sol</option>
+
+            <option value="ingen sol">Ingen sol</option>
+
+          </select></p> 
+      
+        <p><label>Planten forspires i: </label></p>
+
+        <p><select name="månede" size="12" multiple>
+
+          <option value="månede1">Januar</option>
+
+          <option value="månede2">Febuar</option>
+
+          <option value="månede3">Marts</option>
+
+          <option value="månede4">April</option>
+
+          <option value="månede5">Maj</option>
+
+          <option value="månede6">Juni</option>
+
+          <option value="månede7">Juli</option>
+
+          <option value="månede8">August</option>
+
+          <option value="månede9">September</option>
+
+          <option value="månede10">Oktober</option>
+
+          <option value="månede11">November</option>
+
+          <option value="månede12">December</option>
+
+        </select></p> 
+
+      <p><label>Planten udplantes i: </label></p>
+
+      <p><select name="månede" size="12" multiple>
+
+      <option value="månede1">Januar</option>
+
+      <option value="månede2">Febuar</option>
+
+      <option value="månede3">Marts</option>
+
+      <option value="månede4">April</option>
+
+      <option value="månede5">Maj</option>
+
+      <option value="månede6">Juni</option>
+
+      <option value="månede7">Juli</option>
+
+      <option value="månede8">August</option>
+
+      <option value="månede9">September</option>
+
+      <option value="månede10">Oktober</option>
+
+      <option value="månede11">November</option>
+
+      <option value="månede12">December</option>
+
+      </select></p>
+
+        <p><label>Planten spirer efter ca.: </label></p>
+
+        <p><input type="number" name="dage" min="0">Dage</input></p>
+
+        <p><label>Planten er klar til høst efter ca .: </label></p>
+
+        <p><input type="number" name="dage" min="0">Dage</input></p>
+
+        <p><label>Plantebeskrivelse: </label></p>
+
+        <p><textarea name="besked" placeholder="Skriv din beskrivelse her"></textarea></p> 
+
+      </div>
+        
+     <p> <a href="../Plants/Submit.html" target="_blank">
+      
+      <button type="button" name="submit">Submit</button>
+   
+      </a>
+
+      <button id="mybutton"><a href="#top" style="color: white;">top</a></button>
+
+   </p>
+
+    <footer>
+
+        <label>
+
+            © Grønne Drømme 2021
+
+        </label>
+
+    </footer>
+
+</body>

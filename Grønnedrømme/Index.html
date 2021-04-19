@@ -4,6 +4,18 @@
 
 <head>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link href="CSS/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,143 +24,158 @@
 
     <title>Grønne Drømme</title>
 
-<style>
+    <meta name="beskrivelse" content="Her kan du finde informationer omkring planter og deres detaljer">
 
-    body{background-color: lightgrey;}
+    <style>
 
-    h1{text-align: center;}
-
-    h2{text-align: center;}
-
-    h3{text-align: center;}
-
-    p{text-align: center;}
-
-    img
-
-   {
-        
-     display: block;
-
-     margin-left: auto;
-
-     margin-right: auto;
-        
-    }  
-
-   *{
-       box-sizing: border-box; 
-    }
-
-    .img-container
-    {
-
-        float: left;
-
-        width: 30%;
-
-        padding: 15px;
-
-    }
-    
-    .clearfix::after
-    
-    {
-
-      content: "";
- 
-      clear: both;
-
-      display: table;
-
-    }
-
-    .flex-container
-    
-    {
-     
-     display: flex;
-
-     height: 400px;
-
-     align-items: center;
-
-    }
-
-    .flex-container > div
-    
-    {
-      
-     width: 200px;
-
-    margin: 60px;
-
-    text-align: center;
-
-    line-height: 100px;
-
-    font-size: 50px;
-
-    }
-
-</style>
+    </style>
 
 </head>
 
 <body>
 
-<h1> Grønne drømme </h1>
 
-<h3> Velkommen til vores website for haveentusiaster.</h3>
 
-<img src="IMG/Forside-hoejbed1.jpg" alt="Planter">
+    <nav id="navbar-img"></nav>
 
-<p> Siden indeholder informationer om planter, der kan dyrkes i danske haver - både grøntsager, krydderurter, blomster og træer. Det primære fokus ligger dog på spiselige planter.</p>
+    <nav id="navbar">
 
-<p> Vi brænder for at være selvforsynende og håber, at vi kan inspirere andre til at gå i samme retning - det påvirker både din families sundhed og vores alles klima i en positiv retning.</p>
+    <ul>
+        
+        <li><a class="active" href="../Grønnedrømme/Index.html"><i class="fa fa-fe fa-home"></i>Home</a></li>
 
-<p> <h2>Plantedatabasen</h2> </p>
+        <li><a class="active" href="#">Grøntsager</a>
 
-<p> Vores plantedatabase vokser dag for dag og indeholder al den information, som du har brug for, hvis du vil dyrke dine egne planter.</p>
+            <ul>
 
-<p> Hvis du mangler informationer om en plante, opdager forkerte informationer eller mangler en plante, er du velkommen til at skrive til os på <a href="mailto:info@gronnedromme.dk">info@gronnedromme.dk</a> </p>
+            <li><a  href="../Grønnedrømme/Plants/aert.html">Ærter</a></li>
 
-<p> En del af vore informationer er <a target="_blank" href="https://da.wikipedia.org/wiki/Forside">fra den danske wikipedia.</a> </p>
+            <li><a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a></li>
 
-<p> Har du lyst til at bidrage med at tilføje planter i plantedatabasen, hører vi meget gerne fra dig. Vi kan altid bruge flere grønne fingre på tastaturer, så databasen efterhånden bliver fyldt mere og mere op. </p>
+            <li><a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a> </li>
 
-<img src="IMG/Forside-hoejbed2.jpg" alt="Plante jord" >
+        </ul>
 
-<h2> Nyeste planter i databasen</h2>
+        </li>
 
-<div class="clearfix">
+        <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html"><i class="fa fa-fw fa-envelope"></i>Kontakt os</a></li>
 
-<div class="flex-container"
+        </ul>
 
-<p> <h4> <a href="Plants/Bonne.html">-Bønne,Blue Lake</a> </h4> </p>
+    </nav>
 
-<div class="img-container">
+    <audio controls autoplay muted>
 
-<img src="IMG/bønner200px.jpg" alt="Bønner" style="width: 100%;">
+        <source src="../Grønnedrømme/IMG/SINGING BIRDS.mp3" type="audio/mpeg">
 
-</div>
+    </audio>
+        
 
-<p> <h4> <a href="Plants/aert.html">-Ært,Alderman,</a> </h4> </p>
+    <div class=" content ">
 
-<div class="img-container">
+        <button onclick="myFunction()">Dark-mode</button>
 
-<img src="IMG/PeaAlderman200px.jpg" alt="Ærter" style="width: 100%;">
+        <h1> Grønne drømme </h1><br>
 
-</div>
+        <h3> Velkommen til vores website for haveentusiaster</h3><br>
 
-<h4> <a href="Plants/basilikum.html">-Basilikum,Ocimum Basilicum</a> </h4>
+        <img src="IMG/Forside-hoejbed1.jpg " alt="Grønsager,planter,sundt, frihed,plante information"><br>
 
-<div class="img-container">
+        <p> Siden indeholder informationer om planter, der kan dyrkes i danske haver - både grøntsager, krydderurter, blomster og træer. Det primære fokus ligger dog på spiselige planter.</p>
 
-<img src="IMG/BasilikumOcimumBasilicum200px.jpg" alt="Basilikum" style="width: 100%;" >
+        <p> Vi brænder for at være selvforsynende og håber, at vi kan inspirere andre til at gå i samme retning - det påvirker både din families sundhed og vores alles klima i en positiv retning.</p>
 
-</div>
-</div>
+        <p>
+            <h2>Plantedatabasen</h2>
+        </p>
+
+        <p> Vores plantedatabase vokser dag for dag og indeholder al den information, som du har brug for, hvis du vil dyrke dine egne planter.</p>
+
+        <p> Hvis du mangler informationer om en plante, opdager forkerte informationer eller mangler en plante, er du velkommen til at skrive til os på <a href="mailto:info@gronnedromme.dk ">info@gronnedromme.dk</a> </p>
+
+        <p> En del af vore informationer er <a target="_blank " href="https://da.wikipedia.org/wiki/Forside ">fra den danske wikipedia.</a> </p>
+
+        <p> Har du lyst til at bidrage med at tilføje planter i plantedatabasen, hører vi meget gerne fra dig. Vi kan altid bruge flere grønne fingre på tastaturer, så databasen efterhånden bliver fyldt mere og mere op. </p><br>
+
+            <img src="IMG/Forside-hoejbed2.jpg " alt="Grønsager,planter,sundt, frihed">
+
+        <br><h2> Nyeste planter i databasen</h2>
+
+        <div class="clearfix ">
+
+            <div class="flex-container ">
+
+                <p>
+                    <h3> <a href="Plants/Bonne.html " style="color: #4cd455; ">- Bønne, Blue Lake </a> </h3>
+                </p>
+
+                <div class="img-container ">
+
+                    <a href="Plants/Bonne.html " target="_blank ">
+
+                        <img src="IMG/bønner200px.jpg " alt="bønne,Grønsager,planter,sundt, frihed,plante information " style="width: 100%; ">
+                    </a>
+
+                </div>
+
+                <p>
+                    <h3> <a href="Plants/aert.html " style="color: #4cd455; "> - Ært, Alderman </a> </h3>
+                </p>
+
+                <div class="img-container ">
+
+                    <a href="Plants/aert.html " target="_blank ">
+
+                        <img src="IMG/PeaAlderman200px.jpg " alt="Ærter,Grønsager,planter,sundt,frihed,plante information " style="width: 100%; ">
+
+                    </a>
+
+                </div>
+
+                <p>
+                    <h3> <a href="Plants/basilikum.html " style="color:#4cd455; ">- Basilikum, <br> Ocimum Basilicum</a> </h3>
+                </p>
+
+                <div class="img-container ">
+
+                    <a href="Plants/basilikum.html " target="_blank ">
+
+                        <img src="IMG/BasilikumOcimumBasilicum200px.jpg " alt="Basilikum,Grønsager,planter,sundt, frihed,plante information " style="width: 100%; ">
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button id="mybutton"><a href="#top" ">top</a></button>
+
+        <footer>
+
+             <p>
+
+                  © Grønne Drømme 2021
+
+             </p>
+            
+        </footer>
+
+        <script>
+
+            function myFunction() 
+            
+            {
+
+               var element = document.body;
+
+               element.classList.toggle("dark-mode");
+
+            }
+
+        </script>
 
 </body>
+
 </html>
