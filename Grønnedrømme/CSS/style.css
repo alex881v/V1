@@ -142,19 +142,157 @@ nav ul ul li
 }
 
 @media screen and (max-width:500px){
-#navbar a 
+
+    body
 
 {
 
-    float: none;
-
-    display: block;
+    margin:0 auto;
+    max-width: 100%;
+    text-align: 100%;
 
 }
 
+#navbar
+
+{
+
+    display: none;
+
+}
+
+.header
+
+{
+
+    margin: 0 auto;
+
+    position:fixed;
+
+    width: 100%;
+
+}
+
+.img-container 
+
+{
+
+    margin: 0%;
+
+    max-width: 500px;
+
+    flex-direction: column;
+
+}
     
 }
 
+@media screen and (max-width:1000px){
+
+    body
+
+    {
+    
+        margin:0 auto;
+        max-width: 100%;
+        text-align: 100%;
+    
+    }
+    
+    #navbar
+    
+    {
+    
+        display: none;
+    
+    }
+    
+    .header
+    
+    {
+    
+        margin: 0 auto;
+    
+        position:fixed;
+    
+        width: 100%;
+    
+    }
+    
+    .img-container 
+    
+    {
+    
+        margin: 0%;
+    
+        max-width: 700px;
+    
+        flex-direction: column;
+    
+    }
+        
+    }
+        
+
+    @media screen and (max-width:1200px){
+        body
+
+        {
+        
+            margin:0 auto;
+            max-width: 100%;
+            text-align: 100%;
+        
+        }
+
+        #navbar
+
+        {
+
+            display: none;
+
+        }
+
+         footer
+
+        {
+
+            position: fixed ;
+
+            bottom: 0;
+
+            height: 50px;
+
+            width: 100%;
+
+
+
+        }
+        
+        .header
+        
+        {
+        
+            margin: 0 auto;
+        
+            position:fixed;
+        
+            width: 100%;
+        
+        }
+        
+        .flex-container 
+        
+        {
+        
+            margin: 0%;
+        
+            max-width: 700px;
+        
+            flex-direction: column;
+        }
+            
+        }
 
 /* Min sticky er hvordan min menu-linje opføresig eller reager på hvis man scroller op og ned som er opsat som en class */
 
@@ -216,7 +354,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px 0px;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 * {
@@ -232,7 +370,7 @@ img {
 
 .img-container {
     float: left;
-    width: 30%;
+    width: 80%;
     padding: 15px;
 }
 
@@ -474,6 +612,8 @@ input[type=checkbox]:checked ~ .remove-check
 
     border-radius: 4px;
 
+    overflow: visible;
+
 
 }
 
@@ -516,17 +656,10 @@ input[type=checkbox]:checked ~ .remove-check
 
 }
 
+
+
+
 /* TEST */
-
-
-audio
-
-{
-
-    display: flex;
-
-    
-}
 
 
 
