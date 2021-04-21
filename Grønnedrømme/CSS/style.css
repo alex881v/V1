@@ -1,19 +1,30 @@
 /* Her har jeg hvad for noget text typer der bruges til hjemmesiden(som standart) */
 
-body {
+body 
+
+{
     background-color: #91929c;
+
     color: #000000;
+
     margin: auto;
+
     font-size: 28px;
+
     font-family: 'Patrick Hand', cursive;
+
 }
 
 
 /* Her har jeg min baggrund på hele siden og hvor selve texten skal stå */
 
-.header {
+.header 
+
+{
     background-color: #93b1f0;
+
     text-align: center;
+
     position: fixed;
    
 }
@@ -24,45 +35,71 @@ body {
 
 /* og hvis der skulle være nogle effekter står det også her under */
 
-a.active:link {
+a.active:link
+
+{
 
     text-decoration: none;
+
 }
 
-#navbar, footer {
+#navbar, footer 
+
+{
 
     overflow: auto;
+
     background-color: green;
+
     border: 1px solid black;
+
     text-align: center;
+
     width: 100%;
 
 }
 
-#navbar a.active:hover {
+#navbar a.active:hover 
+
+{
 
     background-color: black;
     
 }
 
-#navbar a.active {
+#navbar a.active 
+
+{
 
     color: #93b1f0;
+
     font-variant: small-caps;
+
     float: left;
+
     padding: 2px;
+    
     text-decoration: none;
+
     font-size: 40px;
+
     width: 33%;
+
     justify-content: center;
 }
 
-#navbar-img {
+#navbar-img 
+
+{
 
     background-image: url(../IMG/Forside-hoejbed5.jpg);
+
     height: 60px;
+
     width: auto;
+
     margin: auto;
+
     z-index: 5;
 
 }
@@ -141,14 +178,18 @@ nav ul ul li
 
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px)
+
+{
 
     body
 
 {
 
     margin:0 auto;
+
     max-width: 100%;
+
     text-align: 100%;
 
 }
@@ -205,6 +246,7 @@ footer
 .mobile-container 
 
 {
+
      max-width: 480px;
 
     margin: auto;
@@ -222,6 +264,7 @@ footer
 .topnav 
 
 {
+
 overflow: hidden;
 
 background-color: #333;
@@ -257,6 +300,7 @@ display: block;
 .topnav a.icon 
 
 {
+
 background: black;
 
 display: block;
@@ -272,6 +316,7 @@ top: 0;
 .topnav a:hover
 
 {
+
 background-color: #ddd;
 
 color: black;
@@ -281,6 +326,7 @@ color: black;
 .active 
 
 {
+
 background-color: #4CAF50;
 
 color: white;
@@ -289,7 +335,9 @@ color: white;
 
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px)
+
+{
 
     body
 
@@ -353,6 +401,7 @@ color: white;
     .mobile-container 
 
     {
+
          max-width: 480px;
 
         margin: auto;
@@ -370,6 +419,7 @@ color: white;
   .topnav 
   
   {
+
     overflow: hidden;
 
     background-color: #333;
@@ -405,6 +455,7 @@ color: white;
   .topnav a.icon 
   
   {
+
     background: black;
 
     display: block;
@@ -420,6 +471,7 @@ color: white;
   .topnav a:hover
   
   {
+
     background-color: #ddd;
 
     color: black;
@@ -429,24 +481,28 @@ color: white;
   .active 
   
   {
+
     background-color: #4CAF50;
 
     color: white;
     
   }
 
-    
-
     }
         
 
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:1200px)
+    
+    {
+
         body
 
         {
         
             margin:0 auto;
+
             max-width: 100%;
+
             text-align: 100%;
         
         }
@@ -491,9 +547,8 @@ color: white;
         
             margin: 0%;
         
-            max-width: 700px;
-        
             flex-direction: column;
+
         }
 
 /*Det her nedenunder er til hamburger menuen på mobiler*/
@@ -501,6 +556,7 @@ color: white;
 .mobile-container 
 
 {
+
      max-width: 480px;
 
     margin: auto;
@@ -518,6 +574,7 @@ color: white;
 .topnav 
 
 {
+
 overflow: hidden;
 
 background-color: #333;
@@ -553,6 +610,7 @@ display: block;
 .topnav a.icon 
 
 {
+
 background: black;
 
 display: block;
@@ -568,6 +626,7 @@ top: 0;
 .topnav a:hover
 
 {
+
 background-color: #ddd;
 
 color: black;
@@ -577,26 +636,32 @@ color: black;
 .active 
 
 {
+
 background-color: #4CAF50;
 
 color: white;
 
 }
 
-
-
-        }
+}
 
 /* Min sticky er hvordan min menu-linje opføresig eller reager på hvis man scroller op og ned som er opsat som en class */
 
-.sticky {
+.sticky 
+
+{
+
     top: 0;
     width: 100%;
     z-index: 5;
 }
 
-.sticky+.content {
+.sticky+.content 
+
+{
+
     margin-top: 100px;
+
 }
 
 
@@ -604,112 +669,192 @@ color: white;
 
 h1,
 h2,
-h3 {
+h3 
+
+{
+
     color: #4cd455;
+
     text-align: center;
+
     font-family: 'Patrick Hand', cursive;
+
 }
 
-h1 {
+h1
+
+{
+
     font-size: 3rem;
+
     line-height: 4rem;
+
     text-shadow: -2px -2px 2px black;
+
 }
 
-h2 {
+h2 
+
+{
     font-size: 2rem;
+
     line-height: 4rem;
+
     text-shadow: -2px -2px 2px black;
+
 }
 
-h3 {
+h3 
+
+{
     font-size: 1, 5rem;
+
     line-height: 4rem;
+
     text-shadow: -2px -2px 2px black;
+
 }
 
 
 /* Min p er mit main text på hjemmesiden som der er har e skrifttype, farve og centuret*/
 
-p {
+p 
+
+{
     line-height: 2rem;
+
     text-align: center;
+
     font-family: 'Patrick Hand', cursive;
+
     font-weight: 400;
+
 }
 
 
 /* Her under har jeg mine billeder med hvordan de skal skæres til eller få det til at blive placeret så der ikke kommer en side-scrollbar */
 
-img {
+img 
+
+{
     display: block;
+
     margin-left: auto;
+
     margin-right: auto;
+
     border-radius: 20px 0px;
+
     max-width: 90%;
 }
 
-* {
+* 
+
+{
+
     box-sizing: border-box;
 
     margin: 0;
 
     padding: 0;
+
 }
 
 
 /* Her har jeg nogle a mine classes som bruges til billederene */
 
-.img-container {
+.img-container 
+
+{
     float: left;
+
     width: 80%;
+
     padding: 15px;
+
 }
 
-.clearfix::after {
+.clearfix::after 
+
+{
     content: "";
+
     clear: both;
+
     display: table;
+
 }
 
-.flex-container {
+.flex-container 
+
+{
     display: flex;
-    height: 400px;
+    
     align-items: center;
+
 }
 
-.flex-container>div {
+.flex-container>div 
+
+{
     width: 200px;
+
     margin: 60px;
+
     text-align: center;
+
     line-height: 100px;
+
     font-size: 50px;
+
 }
 
-.img-container:hover {
+.img-container:hover 
+
+{
+
     opacity: 0.5;
+
 }
 
 
 /* Her har jeg min scrollbar */
 
-::-webkit-scrollbar {
+::-webkit-scrollbar 
+
+{
+
     width: 20px;
+
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track 
+
+{
+
     box-shadow: inset 0 0 5px grey;
+
     border-radius: 5px;
+
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb 
+
+{
     background: #008000;
+
     border-radius: 5px;
+
 }
 
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover
+
+{
+
     background: #008000;
+
     cursor: pointer;
+
 }
 
 .clearfix h3
@@ -942,8 +1087,6 @@ audio
     padding-top: 10px;
 
 }
-
-
 
 
 /* TEST */
