@@ -184,7 +184,15 @@ nav ul ul li
     flex-direction: column;
 
 }
-    
+
+footer
+
+{
+
+    display: none;
+
+}
+
 }
 
 @media screen and (max-width:1000px){
@@ -230,7 +238,16 @@ nav ul ul li
         flex-direction: column;
     
     }
-        
+
+
+    footer
+
+    {
+
+        display: none;
+
+    }
+
     }
         
 
@@ -257,7 +274,7 @@ nav ul ul li
 
         {
 
-            position: fixed ;
+            position:fixed;
 
             bottom: 0;
 
@@ -291,7 +308,16 @@ nav ul ul li
         
             flex-direction: column;
         }
-            
+
+
+        footer
+
+        
+        {
+
+            display: none;
+
+        }
         }
 
 /* Min sticky er hvordan min menu-linje opføresig eller reager på hvis man scroller op og ned som er opsat som en class */
@@ -638,8 +664,6 @@ input[type=checkbox]:checked ~ .remove-check
 
 {
 
-    display: flex;
-
     background-color: black;
 
     color: lightgrey;
@@ -653,6 +677,18 @@ input[type=checkbox]:checked ~ .remove-check
     background-color: black;
 
     color: white;
+
+    margin: 0 auto;
+
+}
+
+figcaption
+
+{
+
+    color: #4cd455;
+
+    text-shadow: -2px -2px 2px black;
 
 }
 

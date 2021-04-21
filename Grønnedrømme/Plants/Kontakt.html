@@ -14,6 +14,8 @@
 
     <link href="../CSS/style.css" type="text/css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,32 +38,33 @@
 
 <nav id="navbar">
 
+  <ul>
+      
+      <li><a class="active" href="../Grønnedrømme/Index.html"><i class="fa fa-fe fa-home"></i>Home</a></li>
 
-<ul>
-    
-    <li><a class="active" href="../Grønnedrømme/Index.html">Home</a></li>
+      <li><a class="active" href="#">Grøntsager</a>
 
-    <li><a class="active" href="#">Grøntsager</a>
+          <ul>
 
-        <ul>
+          <li><a  href="../Grønnedrømme/Plants/aert.html">Ærter</a></li>
 
-        <li><a  href="../Grønnedrømme/Plants/aert.html">Ærter</a></li>
+          <li><a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a></li>
 
-        <li><a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a></li>
+          <li><a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a> </li>
 
-        <li><a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a> </li>
+      </ul>
 
-    </ul>
+      </li>
 
-    </li>
+      <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html"><i class="fa fa-fw fa-envelope"></i>Kontakt os</a></li>
 
-    <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html">Kontakt os</a></li>
+      </ul>
 
-    </ul>
-
-</nav>
+  </nav>
 
  <form class="kontakt" method="get"></form>
+
+ <button onclick="myFunction()">Dark-mode</button>
 
      <h1> Kontakt os </h1>
 
@@ -203,7 +206,7 @@
    
       </a>
 
-      <button id="mybutton"><a href="#top" style="color: white;">top</a></button>
+      <button id="mybutton"><a href="#top" ">top</a></button>
 
    </p>
 
@@ -216,5 +219,19 @@
         </label>
 
     </footer>
+
+<script>
+
+function myFunction() 
+
+{
+
+   var element = document.body;
+
+   element.classList.toggle("dark-mode");
+
+}
+
+    </script>
 
 </body>
