@@ -449,16 +449,6 @@ img {
     cursor: pointer;
 }
 
-.clearfix
-
-{
-
-    display: flex;
-
-    justify-content: space-evenly;
-
-}
-
 .clearfix h3
 
 {
