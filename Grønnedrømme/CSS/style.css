@@ -161,6 +161,21 @@ nav ul ul li
 
 }
 
+footer
+
+{
+
+    position:fixed;
+
+    bottom: 0;
+
+    height: 50px;
+
+    width: 100%;
+
+}
+
+
 .header
 
 {
@@ -185,14 +200,6 @@ nav ul ul li
 
 }
 
-footer
-
-{
-
-    display: none;
-
-}
-
 }
 
 @media screen and (max-width:1000px){
@@ -214,6 +221,21 @@ footer
         display: none;
     
     }
+
+    footer
+
+    {
+
+        position:fixed;
+
+        bottom: 0;
+
+        height: 50px;
+
+        width: 100%;
+
+    }
+    
     
     .header
     
@@ -237,15 +259,6 @@ footer
     
         flex-direction: column;
     
-    }
-
-
-    footer
-
-    {
-
-        display: none;
-
     }
 
     }
@@ -282,8 +295,6 @@ footer
 
             width: 100%;
 
-
-
         }
         
         .header
@@ -309,15 +320,6 @@ footer
             flex-direction: column;
         }
 
-
-        footer
-
-        
-        {
-
-            display: none;
-
-        }
 
 
         }
@@ -652,7 +654,7 @@ input[type=checkbox]:checked ~ .remove-check
 
 }
 
-.dark-mode
+.Dark-theme
 
 {
 
