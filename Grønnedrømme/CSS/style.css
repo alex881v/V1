@@ -323,7 +323,6 @@ footer
 /* Min sticky er hvordan min menu-linje opføresig eller reager på hvis man scroller op og ned som er opsat som en class */
 
 .sticky {
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
@@ -463,14 +462,6 @@ img {
     display: flex;
 
     justify-content: space-evenly;
-
-}
-
-main
-
-{
-
-    margin-top: 50px;
 
 }
 
