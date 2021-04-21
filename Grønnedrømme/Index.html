@@ -32,6 +32,34 @@
 
 
 
+    <div class="topnav">
+
+        <a href="../Grønnedrømme/Index.html" class="active">Home</a>
+
+        <div id="mylinks">
+
+            <a  href="../Grønnedrømme/Plants/aert.html">Ærter</a>
+
+            <a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a>
+
+            <a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a>
+
+            <a href="../Grønnedrømme/Plants/Kontakt.html">Kontakt os</a>
+
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myfunction()">
+        
+            <i class="fa fa-bars"></i>
+        
+        </a>
+
+    </div>
+
+    <div style="padding-left: 16px;">
+
+    </div>
+
     <nav id="navbar-img"></nav>
 
     <nav id="navbar">
@@ -74,7 +102,7 @@
 
     <div class=" content ">
 
-        <button onclick="myFunction()">Dark-theme</button>
+        <button onclick="Dark()">Dark-theme</button>
 
         <h1> Grønne drømme </h1><br>
 
@@ -165,7 +193,7 @@
 
         <script>
 
-            function myFunction() 
+            function Dark() 
             
             {
 
@@ -173,6 +201,30 @@
 
                element.classList.toggle("Dark-theme");
 
+            }
+
+            function myFunction() 
+            
+            {
+  
+            var x = document.getElementById("myLinks");
+
+            if (x.style.display === "block") 
+            
+            {
+
+            x.style.display = "none";
+
+            } 
+            
+            else 
+            
+            {
+    
+            x.style.display = "block";
+            
+            }
+            
             }
 
         </script>
