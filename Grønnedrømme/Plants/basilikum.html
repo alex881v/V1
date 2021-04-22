@@ -84,24 +84,11 @@
       
             </li>
       
-            <li> <a class="active" href="../Plants/Kontakt.html"><i class="fa fa-fw fa-envelope"></i>Kontakt os</a></li>
+            <li> <a class="active" href="../Plants/Kontakt.html"><i class="fa fa-fw fa-envelope"></i>Kontakt os</a><h4><span id="span"></h4></span></li>
       
             </ul>
       
         </nav>
-
-        
-    <figure>
-
-        <figcaption> <h5>Lyt til noget afslappende fuglekvader imens du er på Siden</h5></figcaption>
-
-        <audio controls autoplay>
-
-             <source src="../IMG/SINGING BIRDS.mp3" type="audio/mpeg">
-
-        </audio>
-     
-    </figure>
 
 <main>
 
@@ -164,6 +151,27 @@ function Dark()
 
 }
 
+var span = document.getElementById('span');
+
+function time()
+
+{
+
+var d = new Date();
+
+var s = d.getSeconds();
+
+var m = d.getMinutes();
+
+var h = d.getHours();
+
+span.textContent = 
+
+("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+
+}
+
+setInterval(time, 1000);
 
     </script>
 
