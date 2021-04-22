@@ -34,29 +34,25 @@
 
     <div class="topnav">
 
-        <a href="../Grønnedrømme/Index.html" class="active">Home</a>
+        <a href="../Grønnedrømme/Index.html" class="active" style="color: black ">Home</a>
 
         <div id="mylinks">
 
-            <a  href="../Grønnedrømme/Plants/aert.html">Ærter</a>
+            <a  href="../Grønnedrømme/Plants/aert.html" style="color: #4cd455; ">Ærter</a>
 
-            <a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a>
+            <a  href="../Grønnedrømme/Plants/basilikum.html" style="color: #4cd455; ">Basilikum</a>
 
-            <a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a>
+            <a  href="../Grønnedrømme/Plants/Bonne.html" style="color: #4cd455; ">Bønner</a>
 
-            <a href="../Grønnedrømme/Plants/Kontakt.html">Kontakt os</a>
+            <a href="../Grønnedrømme/Plants/Kontakt.html" style="color: #4cd455; ">Kontakt os</a>
 
         </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="myfunction()">
+        <a href="#top" class="icon">
         
             <i class="fa fa-bars"></i>
         
         </a>
-
-    </div>
-
-    <div style="padding-left: 16px;">
 
     </div>
 
@@ -72,17 +68,17 @@
 
             <ul>
 
-            <li><a  href="../Grønnedrømme/Plants/aert.html">Ærter</a></li>
+            <li><a  href="../Grønnedrømme/Plants/aert.html" style="color: #4cd455; ">Ærter</a></li>
 
-            <li><a  href="../Grønnedrømme/Plants/basilikum.html">Basilikum</a></li>
+            <li><a  href="../Grønnedrømme/Plants/basilikum.html" style="color: #4cd455; ">Basilikum</a></li>
 
-            <li><a  href="../Grønnedrømme/Plants/Bonne.html">Bønner</a> </li>
+            <li><a  href="../Grønnedrømme/Plants/Bonne.html" style="color: #4cd455; ">Bønner</a> </li>
 
         </ul>
 
         </li>
 
-        <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html"><i class="fa fa-fw fa-envelope"></i>Kontakt os</a></li>
+        <li> <a class="active" href="../Grønnedrømme/Plants/Kontakt.html"><i class="fa fa-fw fa-envelope"></i>Kontakt os</a><span id="span"></span></li>
 
         </ul>
 
@@ -104,11 +100,22 @@
 
         <button onclick="Dark()">Dark-theme</button>
 
+        
+
         <h1> Grønne drømme </h1><br>
 
         <h3> Velkommen til vores website for haveentusiaster</h3><br>
+ 
+        <img srcset="  IMG/boy-watering400.jpg 400w,
+                       IMG/boy-watering700.jpg 700w,
+                       IMG/boy-watering19201080.jpg 1920w"
+        sizes="(max-width: 500px) 400px, (max-width: 1000px) 700px, 1920px"
 
-        <img src="IMG/Forside-hoejbed1.jpg " alt="Grønsager,planter,sundt, frihed,plante information,grønt"><br>
+        src="../Grønnedrømme/IMG/boy-watering19201080.jpg"
+
+        alt="Vander grøntsager, grønsager,planter,sundt, frihed,plante information,grønt">
+
+        <br>
 
         <p> Siden indeholder informationer om planter, der kan dyrkes i danske haver - både grøntsager, krydderurter, blomster og træer. Det primære fokus ligger dog på spiselige planter.</p>
 
@@ -179,12 +186,12 @@
 
         </div>
 
-        <button id="mybutton"><a href="#top" ">top</a></button>
+        <button id="mybuttons"><a href="#top">top</a></button>
 
         <footer>
 
-             <p>
-
+             <p style="color: black ">
+                
                   © Grønne Drømme 2021
 
              </p>
@@ -193,39 +200,37 @@
 
         <script>
 
-            function Dark() 
+         function Dark() 
             
-            {
+         {
 
-               var element = document.body;
+            var element = document.body;
 
-               element.classList.toggle("Dark-theme");
+            element.classList.toggle("Dark-theme");
 
-            }
+         }
 
-            function myFunction() 
-            
-            {
+            var span = document.getElementById('span');
+
+            function time()
+
+        {
+
+          var d = new Date();
+
+          var s = d.getSeconds();
   
-            var x = document.getElementById("myLinks");
-
-            if (x.style.display === "block") 
-            
-            {
-
-            x.style.display = "none";
-
-            } 
-            
-            else 
-            
-            {
+          var m = d.getMinutes();
+  
+          var h = d.getHours();
+  
+          span.textContent = 
     
-            x.style.display = "block";
-            
-            }
-            
-            }
+          ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+
+        }
+
+        setInterval(time, 1000);
 
         </script>
 
